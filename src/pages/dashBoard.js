@@ -3,7 +3,7 @@ import { DummyPost } from "../data";
 import { Link } from "react-router-dom";
 
 const DashBoard = () => {
-  const [posts, setPosts] = useState(DummyPost);
+  const [posts] = useState(DummyPost);
 
   return (
     <section className="dashboard">

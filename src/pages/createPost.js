@@ -81,6 +81,7 @@ const CreatePost = () => {
             type="file"
             accept="png,jpg,jpeg"
             onChange={(e) => setThumbnail(e.target.files[0])}
+            value={thumbnail}
           />
           <button type="Submit" className="btn primary">
             Create

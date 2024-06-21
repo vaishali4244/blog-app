@@ -15,7 +15,7 @@ const authorsData = [
 ];
 
 const Authors = () => {
-  const [authors, setAuthors] = useState(authorsData);
+  const [authors] = useState(authorsData);
 
   return (
     <section className="authors">

@@ -3,7 +3,7 @@ import PostItems from "./postItems";
 import { DummyPost } from "../data";
 
 const Posts = () => {
-  const [posts, setPosts] = useState(DummyPost);
+  const [posts] = useState(DummyPost);
   return (
     <section className="posts">
       {posts.length > 0 ? (
