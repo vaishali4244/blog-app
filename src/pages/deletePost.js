@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const DeletePost = () => {
-  return (
-    <div>
-      dle post
-    </div>
-  )
-}
+  return <h2 className="center">Post Deleted</h2>;
+};
 
-export default DeletePost
+export default DeletePost;

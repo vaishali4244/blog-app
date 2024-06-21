@@ -21,21 +21,29 @@ const Header = () => {
     <nav>
       <div className="container nav-container">
         <Link to="/" className="nav-logo" onClick={navCloseFunc}>
-          <img src={Logo} alt="navbar logo"  />
+          <img src={Logo} alt="navbar logo" />
         </Link>
         {navShow && (
           <ul className="nav-menu">
             <li>
-              <Link to="/profile/samuel" onClick={navCloseFunc}>Samuel Roy</Link>
+              <Link to="/profile/samuel" onClick={navCloseFunc}>
+                Samuel Roy
+              </Link>
             </li>
             <li>
-              <Link to="/create" onClick={navCloseFunc}>Create Post</Link>
+              <Link to="/create" onClick={navCloseFunc}>
+                Create Post
+              </Link>
             </li>
             <li>
-              <Link to="/authors" onClick={navCloseFunc}>Authors</Link>
+              <Link to="/authors" onClick={navCloseFunc}>
+                Authors
+              </Link>
             </li>
             <li>
-              <Link to="/logout" onClick={navCloseFunc}>Logout</Link>
+              <Link to="/logout" onClick={navCloseFunc}>
+                Logout
+              </Link>
             </li>
           </ul>
         )}

@@ -19,19 +19,25 @@ const Authors = () => {
 
   return (
     <section className="authors">
-      {authors.length> 0?<div className="container authors-container">
-        {authors.map(({id,avatar,name,posts})=>{
-          return <Link key={id} to={`/posts/users/${id}`} className="author">
-            <div className="author-avatar">
-           <img src={avatar} alt={`${name}`} />
-            </div>
-            <div className="author-info">
-              <h4>{name}</h4>
-              <p>{posts+` `} posts</p>
-            </div>
-            </Link>
-        })}
-        </div>:<h2 className="center">No users/author found</h2>}
+      {authors.length > 0 ? (
+        <div className="container authors-container">
+          {authors.map(({ id, avatar, name, posts }) => {
+            return (
+              <Link key={id} to={`/posts/users/${id}`} className="author">
+                <div className="author-avatar">
+                  <img src={avatar} alt={`${name}`} />
+                </div>
+                <div className="author-info">
+                  <h4>{name}</h4>
+                  <p>{posts + ` `} posts</p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      ) : (
+        <h2 className="center">No users/author found</h2>
+      )}
     </section>
   );
 };

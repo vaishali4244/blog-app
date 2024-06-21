@@ -27,6 +27,4 @@ const CategoryPost = () => {
   );
 };
 
-
-
 export default CategoryPost;

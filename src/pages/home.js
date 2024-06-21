@@ -1,12 +1,12 @@
-import React from 'react'
-import Posts from '../components/posts';
+import React from "react";
+import Posts from "../components/posts";
 
 const Home = () => {
   return (
     <div>
-    <Posts/>
+      <Posts />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
