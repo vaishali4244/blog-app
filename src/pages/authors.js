@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Avatar1 from "../images/avatar1.jpg";
+import Avatar1 from "../images/avatar12.jpg";
 import Avatar2 from "../images/avatar2.jpg";
 import Avatar3 from "../images/avatar3.jpg";
 import Avatar4 from "../images/avatar4.jpg";
@@ -23,7 +23,7 @@ const Authors = () => {
         {authors.map(({id,avatar,name,posts})=>{
           return <Link key={id} to={`/posts/users/${id}`} className="author">
             <div className="author-avatar">
-           <img src={avatar} alt={`image of ${name}`} />
+           <img src={avatar} alt={`${name}`} />
             </div>
             <div className="author-info">
               <h4>{name}</h4>

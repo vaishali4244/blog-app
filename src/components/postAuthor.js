@@ -5,7 +5,7 @@ const PostAuthor = () => {
   return (
     <Link to={'/posts/users/monalisa'} className='post-author'>
     <div className="post-author-avatar">
-        <img src={require("../images/avatar1.jpg")} alt="" />
+        <img src={require("../images/avatar12.jpg")} alt="" />
     </div>
     <div className="post-author-details">
         <h5>By: Samuel Roy</h5>
